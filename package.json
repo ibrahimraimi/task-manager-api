@@ -1,14 +1,13 @@
 {
   "name": "task-manager",
   "version": "1.0.0",
-  "description": "task manager",
+  "description": "task manager api",
   "main": "index.js",
   "type": "module",
   "author": "Ibrahim Raimi",
   "license": "ISC",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
