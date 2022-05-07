@@ -1,5 +1,6 @@
 import Task from "../models/Task.js";
 
+// Get all tasks https://127.0.0.1:api/v1/tasks
 export const getAllTasks = async (req, res) => {
   try {
     const tasks = await Task.find({});
@@ -9,6 +10,7 @@ export const getAllTasks = async (req, res) => {
   }
 };
 
+// Create task https://127.0.0.1:api/v1/tasks
 export const createTask = async (req, res) => {
   try {
     const task = await Task.create(req.body);
@@ -18,6 +20,7 @@ export const createTask = async (req, res) => {
   }
 };
 
+// Get single task https://127.0.0.1:api/v1/tasks/:id
 export const getTask = async (req, res) => {
   try {
     const { id: taskID } = req.params;
@@ -31,6 +34,7 @@ export const getTask = async (req, res) => {
   }
 };
 
+// Update a single task https://127.0.0.1:api/v1/tasks/:id
 export const updateTask = async (req, res) => {
   try {
     const { id: taskID } = req.params;
@@ -47,6 +51,7 @@ export const updateTask = async (req, res) => {
   }
 };
 
+// Delete a single task https://127.0.0.1:api/v1/tasks/:id
 export const deleteTask = async (req, res) => {
   try {
     const { id: taskID } = req.params;
