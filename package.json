@@ -7,7 +7,7 @@
   "author": "Ibrahim Raimi",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
